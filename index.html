@@ -20,7 +20,7 @@
         .product{display: flex;flex-flow: row wrap;background: #f5ebf4; color: #69025b;justify-content: space-between;border: 1px solid #d0469b;}
         .product img{border-radius: 20px;box-shadow:1px 2px 4px #e0a0c7; margin: auto;}
         h3{ color: #b50c60;text-transform: uppercase;}
-        .price{color:#b50c60 ; font-weight: bolder;font-size: 40px;margin-left: 20%;}
+        .price{color:#b50c60 ; font-weight: bold;font-size: 35px;}
         .rating{background: #b50c60;color: #fff;padding: 0px 10px;border-radius: 10px;}
         .review{color: rgb(44, 29, 10);}
         .title{font-size: 16px;color: #504333;}
@@ -55,8 +55,8 @@
 
                         <h3 class="hover">${j.category}</h3>
                         <img src="${j.image}" alt="product" width="300" height="300"> <br>
+                        <span class="price">$${j.price}</span>
                         <h3 class="title">${j.title}</h3>
-                        <span class="price">$${j.price}</span> <br>
                         <span class="rating">${j.rating.rate} &#9733;</span><span class="review">(${j.rating.count} reviews)</span>
                         <h2>More About The Product<h2>
                         <p>${j.description}</p>
